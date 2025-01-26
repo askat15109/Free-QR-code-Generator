@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom QR Code Generator</h1>
+        <form id="qrForm">
+            <input type="text" id="qrText" placeholder="Enter text or URL" required>
+            <button type="submit" id="generateButton">Generate QR Code</button>
+        </form>
+        <div id="qrPreview" class="qr-preview">
+            <h3>QR Code Preview</h3>
+            <div id="qrImage"></div>
+            <a id="downloadLink" href="" download="qrcode.png" class="download-btn">Download QR Code</a>
+        </div>
+    </div>
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+    <script src="script.js"></script>
+</body>
+</html>
